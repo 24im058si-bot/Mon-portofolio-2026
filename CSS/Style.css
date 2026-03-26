@@ -141,7 +141,7 @@ section h2{
     font-weight: 700;
     position: relative;  
     text-align: center; 
-}
+}j
 
 section h2::after{
     content: '';

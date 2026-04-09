@@ -219,6 +219,129 @@ footer a:hover{
     color:var(--orange-vif)
     transform: translateY(-3px);
 }
+<main class="contact-container">
+    <section class="contact-info">
+        <h2>Me Contacter</h2>
+        <p>Je suis basée à <strong>Lubumbashi</strong>. N'hésitez pas à me joindre pour toute collaboration ou opportunité.</p>
+        
+        <div class="info-item">
+            <p><strong>Téléphone :</strong> +243 993 599 777</p>
+            <div class="social-links">
+                <a href="https://wa.me/243993599777" target="_blank" class="btn-social">WhatsApp</a>
+                <a href="https://t.me/+243993599777" target="_blank" class="btn-social">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Envoyer un message</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="tel" placeholder="Votre numéro" required>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer</button>
+        </form>
+    </section>
+</main>
+2. Code CSS supplémentaire (à ajouter à la fin de Style.css)
+Ce code utilise tes variables existantes (--violet-doux, --gris-fonce, etc.) pour garder une cohérence visuelle.
+
+CSS
+/* --- Styles page Contact --- */
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 5rem auto;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--violet-fonce);
+}
+
+.info-item {
+    margin-top: 2rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-social {
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: var(--gris-clair);
+    color: var(--gris-fonce);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+    background-color: var(--violet-doux);
+    color: white;
+}
+
+/* Formulaire */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--gris-fonce);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    box-sizing: border-box; /* Pour que le padding ne dépasse pas */
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-fonce);
+}
     
 
 
